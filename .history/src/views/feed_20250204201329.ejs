@@ -1,0 +1,66 @@
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        height: 100%;
+        width: 100%;
+        background-color: skyblue;
+    }
+    main{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        height: 80%;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 50%;
+        width: 50%;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card img{
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="cards">
+            let arr = ['habeeb', '']
+
+            <% for(let i = 0; i < 5; i++) { %> 
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1684262483735-1101bcb10f0d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <h1>Username</h1>
+            </div>
+            <%} %>
+        </div>
+    </main>
+</body>
+</html>
