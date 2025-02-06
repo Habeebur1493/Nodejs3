@@ -25,11 +25,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
   }
   .card {
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 35%;
     background-color: skyblue;
     display: flex;
     justify-content: center;
@@ -40,10 +39,9 @@
   }
   .card img {
     margin-top: 20px;
-    height: 60%;
-    width: 30%;
+    height: 70%;
+    width: 55%;
     border-radius: 50%;
-    object-fit: cover;
   }
 </style>
 
@@ -57,12 +55,18 @@
   <body>
     <main>
       <div class="cards">
-        <% let arr = ['simbiyan', 'Asmith', 'rench']; %>
-        <% users.forEach((username) => { %>
-          <div class="card">
-            <img src="<%= username.image %>" alt="<%= username.username %>" />
-            <h1><%= username.username %></h1>
-          </div>
+        <% let arr = ['habeeb', 'Rahman', 'Akbar'] %> 
+        <% arr.forEach((username)=> { %>
+
+         
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1738509559266-bdd2a813c8ad?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+
+          <h1><%= username %></h1>
+        </div>
         <% }) %>
       </div>
     </main>

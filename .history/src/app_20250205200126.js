@@ -23,17 +23,15 @@ app.post("/create", async (req, res) => {
     image: image,
     password: password,
   });
-  res.redirect('/feed');
+  res.send(user);
 });
 
 app.get('/feed', async (req, res) => {
 
   const users = await UserModel.find()
-
-  res.render('feed', {users})
+  
+  res.render('feed')
 })
 
 
 module.exports = app;
-
-//Completed

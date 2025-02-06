@@ -35,5 +35,3 @@ app.get('/feed', async (req, res) => {
 
 
 module.exports = app;
-
-//Completed
